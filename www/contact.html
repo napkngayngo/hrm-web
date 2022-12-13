@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7CL Company</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./img/Logo7CLnbg.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- onclick: nhấn vào (js) -->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="recruit.html">RECRUIT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact us -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443592367601!2d106.62563971526055!3d10.853826360727062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1668375969526!5m2!1svi!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>
+                Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành
+                phố Hồ Chí Minh, Việt Nam
+              </h5>
+              <p>Quan 10, Ho Chi Minh, VN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+84 334994221</h5>
+              <p>Monday to Saturday, 9AM to 8PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>company7cl@cv.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="" id="send_form" class="form-msg">
+            <div class="msg"></div>
+            <div class="form-group">
+              <input type="text" name="fname" placeholder="Enter your name" required />
+              <span class="required"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" name="mail" placeholder="Enter email address" required />
+              <span class="required"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Enter your subject" required /> 
+              <span class="required"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" name="content" placeholder="Message" required />
+              <span class="required"></span>
+            </div>
+            <button type="submit" class="hero-btn blue-btn">
+              Send Massage
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <section class="footer">
+      <hr />
+      <h4>About Us</h4>
+      <p>Chào Mừng Bạn Đến Với Chúng Tôi.</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+    <!-- js cho menu di động -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script type="text/javascript" src="js/submit.js"></script>
+  </body>
+</html>
